@@ -100,9 +100,9 @@
                         
                         <div class="form-horizontal"> 
                             <div class="form-group">
-                                <label class="col-sm-1 control-label" for="inputTel">申請單位: </label>
+                                <label class="col-sm-1 control-label" for="inputUnit">申請單位: </label>
                                 <div class="col-sm-11">
-                                    <input type="tel" class="form-control" id="inputTel">
+                                    <input type="text" class="form-control" id="inputUnit">
                                 </div>
                             </div>
 
@@ -115,9 +115,82 @@
                         </div>
                         
                     </section>
-
+                    
+                    <hr />
+                    
                     <section id="item">
-
+                        
+                        <!-- 輸入器材資訊 -->
+                        <div class="row form-horizontal">
+                            <div class="col-sm-6 row">
+                                <label class="col-sm-2 control-label" 
+                                       for="inputNo">DV編號: </label>
+                                <div class="col-sm-10">
+                                    <select class="form-control">
+                                      <option>A</option>
+                                      <option>B</option>
+                                      <option>C</option>
+                                      <option>D</option>
+                                      <option>E</option>
+                                    </select>
+                                </div>
+                            </div>
+                         
+                            <div class="col-sm-6 row">
+                                <label class="col-sm-2 control-label" 
+                                       for="inputBattery">電池數量: </label>
+                                <div class="col-sm-10">
+                                    <select class="form-control">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6 row">
+                                <label class="col-sm-2 control-label" 
+                                       for="inputTripod">腳架數量: </label>
+                                <div class="col-sm-10">
+                                    <select class="form-control">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                                                                                                    
+                            <div class="col-sm-6 row">
+                                <label class="col-sm-2 control-label" 
+                                       for="inputBattery">經手人: </label>
+                                <div class="col-sm-10">
+                                    <select class="form-control">
+                                      <option>AAA</option>
+                                      <option>BBB</option>
+                                      <option>CCC</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-2 row">
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" id="inputParts" value="power">電源線
+                                    </label>
+                                </div>
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" id="inputParts" value="usb">傳輸線
+                                    </label>                          
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-12">
+                                    <label class="control-label" for="inputOther">其他</label>
+                                    <textarea id="inputOther" class="form-control" rows="3"></textarea>
+                            </div>
+                        
+                        </div>
                     </section>
 
                     <section id="other">
