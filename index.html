@@ -15,7 +15,40 @@
         <!-- Custom styles for this template -->
         <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
     </head>
-
+    
+    <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 30px;
+            }
+    </style>
+    
+    <!--
+        <style>
+            body {
+                padding-top: 70px;
+                padding-bottom: 30px;
+            }
+            
+            #content > .container > section {
+                margin-top: 1rem;
+                margin-bottom: 3.5rem;
+            }
+            
+            #content > .container > section form section{
+                background-color: #eaeaea;
+                /*padding: 1.3rem;*/
+                border: 1px #c9c9c9 solid;
+                border-radius: 2rem;
+            }
+            
+            #content section h2 {
+                color: red;
+                margin-bottom: 0.8em;
+            }
+        </style>
+    -->
+    
     <body>
 
         <!-- 導覽列 -->
@@ -33,7 +66,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">器材管理系統</a>
+                    <a class="navbar-brand" href="#">教學研究組-器材管理系統</a>
                 </div>
                 
                 <!-- 選單按鈕 -->
@@ -59,10 +92,23 @@
                                 <h3 class="panel-title">系統公告</h3>
                             </div>
                             <div class="panel-body">
-                                器材系統測試RGREJETKRTKYJEYJETJ
+                                器材系統測試
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">借出名單</h3>
+                            </div>
+                            <div class="panel-body">
+                                Name
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div><!-- /.container -->
 
             </div>
@@ -79,6 +125,31 @@
                         
                         <!-- 輸入帳號密碼 -->
                         <div class="row  form-horizontal">
+                            
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">申請人欄位</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-sm-6 row">
+                                        <label class="col-sm-2 control-label" 
+                                       for="inputAccountID">帳號: </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputAccountID">
+                                        </div>
+                                    </div>
+                                    
+                                <div class="col-sm-6 row">
+                                    <label class="col-sm-2 control-label" 
+                                       for="inputPassword">密碼: </label>
+                                        <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword">
+                                        </div>
+                                </div>                                                          
+                                </div>
+                            </div>
+                            
+                            <!--
                             <div class="col-sm-6 row">
                                 <label class="col-sm-2 control-label" 
                                        for="inputAccountID">帳號: </label>
@@ -92,7 +163,8 @@
                                 <div class="col-sm-10">
                                     <input type="password" class="form-control" id="inputPassword">
                                 </div>
-                            </div>
+                            </div>-->
+                            
                         </div>
                         
                         <hr />
@@ -100,18 +172,26 @@
                         
                         <div class="form-horizontal"> 
                             <div class="form-group">
-                                <label class="col-sm-1 control-label" for="inputUnit">申請單位: </label>
-                                <div class="col-sm-11">
+                                <label class="col-sm-2 control-label" for="inputUnit">申請單位: </label>
+                                <div class="col-sm-10">
                                     <input type="text" class="form-control" id="inputUnit">
                                 </div>
                             </div>
 
                             <div class="form-group ">
-                                <label class="col-sm-1 control-label" for="inputTel">電話: </label>
-                                <div class="col-sm-11">
+                                <label class="col-sm-2 control-label" for="inputTel">電話: </label>
+                                <div class="col-sm-10">
                                     <input type="tel" class="form-control" id="inputTel">
                                 </div>
                             </div>
+                            
+                             <div class="form-group">
+                                <label class="col-sm-2 control-label" for="inputUse">申請用途: </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputUse">
+                                </div>
+                            </div>
+                            
                         </div>
                         
                     </section>
@@ -123,9 +203,9 @@
                         <!-- 輸入器材資訊 -->
                         <div class="row form-horizontal">
                             <div class="col-sm-6 row">
-                                <label class="col-sm-2 control-label" 
+                                <label class="col-sm-3 control-label" 
                                        for="inputNo">DV編號: </label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-9">
                                     <select class="form-control">
                                       <option>A</option>
                                       <option>B</option>
@@ -137,21 +217,22 @@
                             </div>
                          
                             <div class="col-sm-6 row">
-                                <label class="col-sm-2 control-label" 
+                                <label class="col-sm-3 control-label" 
                                        for="inputBattery">電池數量: </label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-9">
                                     <select class="form-control">
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
+                                      <option>4</option>
                                     </select>
                                 </div>
                             </div>
                             
                             <div class="col-sm-6 row">
-                                <label class="col-sm-2 control-label" 
+                                <label class="col-sm-3 control-label" 
                                        for="inputTripod">腳架數量: </label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-9">
                                     <select class="form-control">
                                       <option>1</option>
                                       <option>2</option>
@@ -161,18 +242,19 @@
                             </div>
                                                                                                     
                             <div class="col-sm-6 row">
-                                <label class="col-sm-2 control-label" 
+                                <label class="col-sm-3 control-label" 
                                        for="inputBattery">經手人: </label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-9">
                                     <select class="form-control">
                                       <option>AAA</option>
                                       <option>BBB</option>
                                       <option>CCC</option>
+                                      <option>DDD</option>
                                     </select>
                                 </div>
                             </div>
                             
-                            <div class="col-sm-2 row">
+                            <div class="col-sm-12 row">
                                 <div class="checkbox-inline">
                                     <label>
                                         <input type="checkbox" id="inputParts" value="power">電源線
@@ -186,19 +268,30 @@
                             </div>
                             
                             <div class="col-sm-12">
-                                    <label class="control-label" for="inputOther">其他</label>
+                                    <label class="control-label" for="inputOther">其他: </label>
                                     <textarea id="inputOther" class="form-control" rows="3"></textarea>
                             </div>
                         
                         </div>
                     </section>
 
-                    <section id="other">
-                    </section>
-
-                    <section id="button-group">
-                    </section>
+                <hr />
                     
+                <!--送出資訊-->
+                    <section id="button-group">
+                         <div class="row form-horizontal">
+                             <div class="col-sm-12">
+                                <button class="btn btn-lg btn-primary btn-block" type="submit">資料確認送出</button>                  
+                             </div>
+                         </div>
+                    </section>
+                   
+                
+                
+                
+                
+                
+                
                 </form>
                 
                 
