@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>中華大學教學研究組-器材管理系統</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+    </head>
+    
+    <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 30px;
+            }
+    </style>
+    
+    <!--
+        <style>
+            body {
+                padding-top: 70px;
+                padding-bottom: 30px;
+            }
+            
+            #content > .container > section {
+                margin-top: 1rem;
+                margin-bottom: 3.5rem;
+            }
+            
+            #content > .container > section form section{
+                background-color: #eaeaea;
+                /*padding: 1.3rem;*/
+                border: 1px #c9c9c9 solid;
+                border-radius: 2rem;
+            }
+            
+            #content section h2 {
+                color: red;
+                margin-bottom: 0.8em;
+            }
+        </style>
+    -->
+    
+    <body>
+
+        <!-- 導覽列 -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- 手機版擴俺按鈕 -->
+                <div class="navbar-header">
+                    <button type="button" 
+                            class="navbar-toggle collapsed" 
+                            data-toggle="collapse" data-target="#navbar" 
+                            aria-expanded="false" aria-controls="navbar">
+                        
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">教學研究組-器材管理系統</a>
+                </div>
+                
+                <!-- 選單按鈕 -->
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">借出登記</a></li>
+                        <li><a href="#return">歸還登記</a></li>
+                        <li><a href="#reserve">預約登記</a></li>
+                        <li><a href="#enquiry">預約資料查詢</a></li>
+                        <li><a href="#lend">借出資料查詢</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <header>
+            <div class="jumbotron">
+
+                <div class="container">  
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">系統公告</h3>
+                            </div>
+                            <div class="panel-body">
+                                器材系統測試
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">借出名單</h3>
+                            </div>
+                            <div class="panel-body">
+                                Name-TEST
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div><!-- /.container -->
+
+            </div>
+        </header>
+        
+        <section>        
+        
+            <div class="container">
+            
+                <form role="form">
+                
+                    <section id="applicant-data">
+                        
+                        <!-- 輸入帳號密碼 -->
+                        <div class="row  form-horizontal">
+                            
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">歸還資訊欄位</h3>
+                                </div>
+                                
+                                <div class="panel-body">
+                                    
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="inputAccountID">尚未歸還名單: </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputAccountID">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                
+                                    <label class="col-sm-2 control-label" 
+                                       for="inputBattery">經手人: </label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control">
+                                              <option>AAA</option>
+                                              <option>BBB</option>
+                                              <option>CCC</option>
+                                              <option>DDD</option>
+                                            </select>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        
+                                        <label class="col-sm-2 control-label" for="inputUse">歸還日期: </label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group date">
+                                                <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                            </div>                                           
+                                        </div>
+                                        
+                                    </div> 
+                                    
+                                     <div class="form-group">
+                                     
+                                        <label class="col-sm-2 control-label" for="inputOther">備注: </label>
+                                       <div class="col-sm-10"> 
+                                           <textarea id="inputOther" class="form-control" rows="3"></textarea>
+                                       </div>
+                                         
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div> 
+                            
+                        </div>
+                        
+                       
+                        
+                
+                        
+                        
+                    </section>
+                    
+                    <hr />
+                    
+                    <section id="item">
+                        
+                        <!-- 輸入器材資訊 -->
+                        <div class="row form-horizontal">
+                            
+                            <div class="panel panel-info">
+                                
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">歸還物品欄位(顯示借出物品項目)</h3>
+                                </div>
+                                <div class="panel-body">
+                                                                                                                            
+                                </div>
+                            
+                             
+                               
+                                
+                            </div>
+                        
+                        </div>
+                     
+                    </section>
+
+                <hr />
+                    
+                <!--送出資訊-->
+                    <section id="button-group">
+                         <div class="row form-horizontal">
+                             <div class="col-sm-12">
+                                <button class="btn btn-lg btn-primary btn-block" type="submit">資料確認送出</button>      
+                             </div>
+                         </div>
+                    </section>
+            
+                </form>
+             
+            </div>
+            
+        </section>
+
+        
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    </body>
+</html>
