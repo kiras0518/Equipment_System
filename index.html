@@ -119,12 +119,12 @@
         
             <div class="container">
             
-                <form role="form">
+                <form role="form" action="preview.php" method="post">
                 
                     <section id="applicant-data">
                         
                         <!-- 輸入帳號密碼 -->
-                        <div class="row  form-horizontal">
+                        <div class="row form-horizontal">
                             
                             <div class="panel panel-info">
                                 <div class="panel-heading">
@@ -133,101 +133,39 @@
                                 <div class="panel-body">
                                     
                                     <div class="form-group">
-                                        <label class="col-sm-2 control-label" for="inputAccountID">帳號: </label>
+                                        <label class="col-sm-2 control-label" for="inputNameID">姓名: </label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="inputAccountID">
+                                            <input type="text" class="form-control" id="inputNameID" name="inputNameID">
                                         </div>
-                                    </div>
-                                    
-                                    <div class="form-group">                          
-                                        <label class="col-sm-2 control-label" for="inputPassword">密碼: </label>
-                                        <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="inputPassword">
-                                        </div>                                 
                                     </div>
                                     
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label" for="inputUnit">申請單位: </label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="inputUnit">
+                                            <input type="text" class="form-control" id="inputUnit" name="inputUnit">
                                         </div>
                                     </div>
 
                                     <div class="form-group ">
                                         <label class="col-sm-2 control-label" for="inputTel">電話: </label>
                                         <div class="col-sm-10">
-                                            <input type="tel" class="form-control" id="inputTel">
+                                            <input type="tel" class="form-control" id="inputTel" name="inputTel">
                                         </div>
                                     </div>
                             
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label" for="inputUse">申請用途: </label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="inputUse">
+                                            <input type="text" class="form-control" id="inputUse" name="inputUse">
                                         </div>
                                     </div> 
                                     
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label" for="inputUse">歸還日期: </label>
-                                        <div class="col-sm-10">
-                                            
-                                            <div class="input-group date">
-  <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-</div>
-                                            
-                                        </div>
-                                    </div>  
+                                    
                                     
                                 </div>
                             </div>
                             
-                            <!--
-                            <div class="col-sm-6 row">
-                                <label class="col-sm-2 control-label" 
-                                       for="inputAccountID">帳號: </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputAccountID">
-                                </div>
-                            </div>
-                            <div class="col-sm-6 row">
-                                <label class="col-sm-2 control-label" 
-                                       for="inputPassword">密碼: </label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword">
-                                </div>
-                            </div>-->
-                            
-                         
-                        </div>
-                        
-                       
-                        
-                        <!-- 輸入申請單位、電話
-                        
-                        <div class="form-horizontal"> 
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" for="inputUnit">申請單位: </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputUnit">
-                                </div>
-                            </div>
-
-                            <div class="form-group ">
-                                <label class="col-sm-2 control-label" for="inputTel">電話: </label>
-                                <div class="col-sm-10">
-                                    <input type="tel" class="form-control" id="inputTel">
-                                </div>
-                            </div>
-                            
-                             <div class="form-group">
-                                <label class="col-sm-2 control-label" for="inputUse">申請用途: </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputUse">
-                                </div>
-                            </div>
-                            
-                        </div> -->
-                        
+                        </div>                       
                         
                     </section>
                     
@@ -246,7 +184,7 @@
                                 
                                 <div class="col-sm-6 row">
                                     <label class="col-sm-3 control-label" 
-                                       for="inputNo">DV編號: </label>
+                                       for="inputNo" name="inputNo">DV編號: </label>
                                         <div class="col-sm-9">
                                             <select class="form-control">
                                               <option>A</option>
@@ -260,7 +198,7 @@
                          
                                 <div class="col-sm-6 row">
                                     <label class="col-sm-3 control-label" 
-                                       for="inputBattery">電池數量: </label>
+                                       for="inputBattery" name="inputBattery">電池數量: </label>
                                         <div class="col-sm-9">
                                             <select class="form-control">
                                               <option>1</option>
@@ -273,7 +211,7 @@
                             
                                 <div class="col-sm-6 row">
                                     <label class="col-sm-3 control-label" 
-                                       for="inputTripod">腳架數量: </label>
+                                       for="inputTripod" name="inputTripod">腳架數量: </label>
                                         <div class="col-sm-9">
                                             <select class="form-control">
                                               <option>1</option>
@@ -285,7 +223,7 @@
                                                                                                     
                                 <div class="col-sm-6 row">
                                     <label class="col-sm-3 control-label" 
-                                       for="inputBattery">經手人: </label>
+                                       for="inputStaff" name="inputStaff">經手人: </label>
                                         <div class="col-sm-9">
                                             <select class="form-control">
                                               <option>AAA</option>
@@ -299,12 +237,12 @@
                                 <div class="col-sm-12 row">
                                     <div class="checkbox-inline">
                                         <label>
-                                            <input type="checkbox" id="inputParts" value="power">電源線
+                                            <input type="checkbox" id="inputPower" name="inputPower" value="power">電源線
                                         </label>
                                     </div>
                                     <div class="checkbox-inline">
                                         <label>
-                                            <input type="checkbox" id="inputParts" value="usb">傳輸線
+                                            <input type="checkbox" id="inputUSB" name="inputUSB" value="usb">傳輸線
                                         </label>                          
                                     </div>
                                 </div>
@@ -329,20 +267,12 @@
                     <section id="button-group">
                          <div class="row form-horizontal">
                              <div class="col-sm-12">
-                                <button class="btn btn-lg btn-primary btn-block" type="submit">資料確認送出</button>                  
+                                <input type="submit" value="資料確認送出">
+                                   
                              </div>
                          </div>
-                    </section>
-                   
-                
-                
-                
-                
-                
-                
-                </form>
-                
-                
+                    </section>                    
+                </form>                             
                 
             </div>
             
